@@ -10,7 +10,7 @@ int main(){
 
     // read value of x
     printf("Enter x\n");
-    scanf("%lf\n",&x);
+    scanf("%lf",&x);
 
     // computation
     // numerator
