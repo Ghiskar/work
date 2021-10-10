@@ -55,11 +55,7 @@ int main(){
             if (equals){ break; }
         }
         if (!equals){
-            if (count){ printf(", "); }
-
-            if (count && !(count % border)){ printf("\n"); }
-
-            printf("A[%3ld] = %3d", i, A[i]);
+            printf("A[%3ld] = %3d, address = %p\n", i, A[i], &A[i]);
             ++count;
         }
     }
