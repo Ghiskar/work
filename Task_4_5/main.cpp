@@ -19,11 +19,10 @@ int main(){
     for (char *current = str; *current; ++current){
         if (*current == delimiter){
             if (!(count % 2)){
-                if (strlen(res)){ strncat(res, &delimiter, 1); }
-
-                for (size_t i = index - count; i < index; ++i){
-                    strncat(res, &str[i], 1);
+                if (strlen(res)){
+                    strncat(res, &delimiter, 1);
                 }
+                strncat(res, &str[index-count], count);
             }
             count = -1;
         }
